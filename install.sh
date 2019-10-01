@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 echo 'centos7primer'
+sleep 1
+echo 'doing yum update'
 yum update -y
+echo 'installing tasty tools'
 yum install epel-release nano git wget nmap -y 
 yum install htop -y 
 echo '
@@ -23,5 +26,7 @@ history() {                  #5
 PROMPT_COMMAND=_bash_history_sync
 ' >> /etc/profile
 cd;echo 'export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\$ "' >> .bashrc ; echo "alias ls='ls -l --color=always'" >> .bashrc
+cd;echo 'alias ls='ls -l --color=always' >> .bashrc
 git config --global user.email "pooley999@gmail.com"
 git config --global user.name "muddydev"
+source .bashrc
