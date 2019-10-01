@@ -5,7 +5,7 @@ echo 'doing yum update'
 yum update -y
 echo 'installing tasty tools'
 yum install epel-release nano git wget nmap -y 
-yum install htop -y 
+yum install htop arp-scan -y 
 echo '
 HISTSIZE=9000
 HISTFILESIZE=$HISTSIZE
