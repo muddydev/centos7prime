@@ -29,4 +29,4 @@ cd;echo 'export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\
 cd;echo 'alias ls='ls -l --color=always' >> .bashrc
 git config --global user.email "pooley999@gmail.com"
 git config --global user.name "muddydev"
-echo 'you need to exit and reconnect'
+echo "you need to exit and reconnect"
