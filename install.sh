@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo 'centos7primer'
 yum update -y
 yum install epel-release nano git wget nmap -y 
